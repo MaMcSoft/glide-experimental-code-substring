@@ -6,12 +6,12 @@
     "author": "Miguel Mejia",
     "params": [
       {
-        "name": "file",
+        "name": "url",
         "displayName": "File URL",
         "type": "string"
       },
       {
-        "name": "range",
+        "name": "cells",
         "displayName": "Range",
         "type": "string"
       }

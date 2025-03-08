@@ -1,5 +1,5 @@
 
-window.function = function (url, range) {
+window.function = function (url, cells) {
 
     file = url.value ?? "";
     if (!file) return;
@@ -13,7 +13,7 @@ window.function = function (url, range) {
       // Select the first worksheet
       const worksheet = workbook.Sheets[workbook.SheetNames[0]];
       // Define the range you want to extract
-      const range = 'A1:D10';
+      const range = cells;
       // Extract the data in the specified range
       const extractedData = XLSX.utils.sheet_to_json(worksheet, { range: range, header: 1 });
       return extractedData;
