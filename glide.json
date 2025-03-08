@@ -2,7 +2,7 @@
 	{
 		"kind": "column",
 		"name": "XLSX2JSON",
-		"description": "Gets content from XLSX and returnthem in JSON",
+		"description": "Gets contents from XLSX and returns them in JSON",
 		"author": "Miguel Mejia <mamcsoft92@gmail.com>",
 		"params": [
 			{
