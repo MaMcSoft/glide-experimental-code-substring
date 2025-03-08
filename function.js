@@ -1,10 +1,8 @@
 
 window.function = function (url, cells) {
 
-  fileUrl = url ?? "";
-  console.log(fileUrl)
-  cellsRange = cells ?? "";
-  console.log(cellsRange)
+  fileUrl = url.value ?? "";
+  cellsRange = cells.value ?? "";
 
   fetch(fileUrl)
     .then(response => {
