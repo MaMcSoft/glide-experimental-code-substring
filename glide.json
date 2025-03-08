@@ -17,7 +17,7 @@
       }
     ],
     "result": {
-      "type": "json"
+      "type": "array"
     }
   }
 ]
