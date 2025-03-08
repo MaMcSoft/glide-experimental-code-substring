@@ -17,7 +17,7 @@
 			},
 			{
 				"name": "index",
-				"displayName": "Sheet Index (Star form 0 and for multiple sheets separate the indexes by commas Eg. 2,5,8)",
+				"displayName": "Sheet Index (Start form 0 and for multiple sheets separate the indexes by commas Eg. 2,5,8)",
 				"type": "string"
 			}
 		],
