@@ -3,10 +3,10 @@ window.addEventListener("message", function(event) {
 
   window.function(...params)
     .then(function(result) {
+      console.log(result)
       const response = { key };
       if (result !== undefined) {
         // FIXME: Remove `type` once that's in staging
-        console.log(result)
         response.result = { value: result };
       }
       event.source.postMessage(response, "*");
