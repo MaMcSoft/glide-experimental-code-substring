@@ -14,11 +14,12 @@ window.function = async function(url, cells, index) {
       throw new Error("Network response was not ok");
     }
 
+    const arrayBuffer = await response.arrayBuffer();
+    const data = new Uint8Array(arrayBuffer);
+    const workbook = XLSX.read(data, { type: "array" });
+
     for (let i = 0; i < sheetsIndex.length; i++) {
       let sheet = sheetsIndex[i];
-      const arrayBuffer = await response.arrayBuffer();
-      const data = new Uint8Array(arrayBuffer);
-      const workbook = XLSX.read(data, { type: "array" });
       const worksheet = workbook.Sheets[workbook.SheetNames[sheet]];
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: cellsRange[i] });
       const extract = JSON.stringify(jsonData, null, 2);
