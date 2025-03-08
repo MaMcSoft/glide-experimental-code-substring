@@ -17,8 +17,12 @@
 			}
 		],
 		"result": {
-			"type": "array",
-			"items": "primitive"
-		}
+			"name": "array",
+			"displayName": "Array",
+			"type": {
+			  "kind": "array",
+			  "items": "primitive"
+			}
+		  }
 	}
 ]
