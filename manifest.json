@@ -7,16 +7,12 @@
     {
       "name": "url",
       "displayName": "File URL",
-      "type": {
-        "kind": "string"
-      }
-    },
+      "type": "string"
+    }
     {
       "name": "cells",
       "displayName": "Range",
-      "type": {
-        "kind": "string"
-      }
+      "type": "string"
     }
   ],
   "result": {
