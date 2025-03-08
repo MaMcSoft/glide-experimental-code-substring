@@ -1,9 +1,8 @@
-
 window.function = function (url, cells) {
 
   fileUrl = url.value ?? "";
   cellsRange = cells.value ?? "";
-  const extract = "Data";
+  var extract = "";
 
   fetch(fileUrl)
     .then(response => {
@@ -33,5 +32,5 @@ window.function = function (url, cells) {
       console.error('Error fetching or processing the Excel file:', error);
     });
 
-    return extract;
+    return "extract";
 }
