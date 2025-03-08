@@ -1,8 +1,8 @@
 
 window.function = function (url, cells) {
 
-  const fileUrl = url ?? "";
-  const cellsRange = cells ?? "";
+  fileUrl = url ?? "";
+  cellsRange = cells ?? "";
 
   fetch(fileUrl)
     .then(response => {
