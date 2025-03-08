@@ -1,8 +1,8 @@
 window.function = async function(url, cells, index) {
   try {
     const fileUrl = url.value ?? "";
-    const cellsRange = cells.value ?? "";
-    const sheetsIndex = index.value ?? "";
+    let cellsRange = cells.value ?? "";
+    let sheetsIndex = index.value ?? "";
     const response = await fetch(fileUrl);
 
     let results = [];
