@@ -20,11 +20,6 @@
     }
   ],
   "result": {
-    "name": "array",
-    "displayName": "Array",
-    "type": {
-      "kind": "array",
-      "items": "primitive"
-    }
+    "type": "primitive"
   }
 }
