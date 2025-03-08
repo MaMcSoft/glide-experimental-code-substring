@@ -24,7 +24,7 @@ window.function = function (url, cells) {
       // By default, the first row is used as the header row.
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: range });
       console.log(jsonData);
-      return JSON.stringify(jsonData, null, 2);
+      return jsonData;
     })
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
