@@ -1,23 +1,23 @@
 [
-  {
-    "kind": "column",
-    "name": "XLSX",
-    "description": "Gets the contentn of an XLSX",
-    "author": "Miguel Mejia <mamcsoft92@gmail.com>",
-    "params": [
-      {
-        "name": "url",
-        "displayName": "File URL",
-        "type": "string"
-      },
-      {
-        "name": "cells",
-        "displayName": "Range",
-        "type": "string"
-      }
-    ],
-    "result": {
-      "type": "string"
-    }
-  }
+	{
+		"kind": "column",
+		"name": "XLSX",
+		"description": "Gets content from XLSX",
+		"author": "Miguel Mejia <mamcsoft92@gmail.com>",
+		"params": [
+			{
+				"name": "url",
+				"displayName": "File URL",
+				"type": "string"
+			},
+			{
+				"name": "cells",
+				"displayName": "Range",
+				"type": "string"
+			}
+		],
+		"result": {
+			"type": "string"
+		}
+	}
 ]
