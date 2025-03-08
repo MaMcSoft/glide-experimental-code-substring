@@ -34,6 +34,6 @@ window.function = function (url, cells) {
 
     
 }
-window.function(urlInput, cellsInput).then(extract => {
-  return extract;
+window.function(url, cells).then(extract => {
+  return "extract";
 });
