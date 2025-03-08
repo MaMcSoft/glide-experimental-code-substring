@@ -25,13 +25,10 @@ window.function = function (url, cells) {
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: range });
       
       extract = JSON.stringify(jsonData, null, 2)
-      console.log(extract);
       return extract;
     })
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
     });
     
-    console.log(extract);
-    return extract;
 }
