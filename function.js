@@ -2,7 +2,9 @@
 window.function = function (url, cells) {
 
   fileUrl = url ?? "";
+  console.log(fileUrl)
   cellsRange = cells ?? "";
+  console.log(cellsRange)
 
   fetch(fileUrl)
     .then(response => {
