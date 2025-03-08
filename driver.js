@@ -5,7 +5,7 @@ window.addEventListener("message", async function(event) {
   let error;
   try {
     result = await window.function(...params.then(extract => {
-      console.log(extract);
+      console.log("Data"+extract);
       return extract;
     }));
   } catch (e) {
