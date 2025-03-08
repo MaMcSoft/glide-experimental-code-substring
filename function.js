@@ -17,7 +17,7 @@ window.function = async function(url, cells) {
   } catch (error) {
     console.error("Error fetching or processing the Excel file:", error);
   }
-};
+}
 
 /*window.function = function (url, cells) {
 
