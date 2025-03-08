@@ -3,6 +3,7 @@ window.function = function (url, cells) {
 
   fileUrl = url.value ?? "";
   cellsRange = cells.value ?? "";
+  const extract = "Data";
 
   fetch(fileUrl)
     .then(response => {
@@ -24,11 +25,13 @@ window.function = function (url, cells) {
       // By default, the first row is used as the header row.
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: range });
       
-      const extract = JSON.stringify(jsonData, null, 2)
+      extract = JSON.stringify(jsonData, null, 2)
       console.log(extract);
-      return "Data " + extract;
+      
     })
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
     });
+
+    return extract;
 }
