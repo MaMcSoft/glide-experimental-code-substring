@@ -8,7 +8,7 @@
       "name": "url",
       "displayName": "File URL",
       "type": "string"
-    }
+    },
     {
       "name": "cells",
       "displayName": "Range",
