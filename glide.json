@@ -1,24 +1,19 @@
 [
   {
     "kind": "column",
-    "name": "Substring",
-    "description": "Extracts a substring out of a string. Both start and end indexes are optional. The end index is exclusive.",
-    "author": "Mark Probst <mark@glideapps.com>",
+    "name": "XLSX",
+    "description": "Extracts an specific range from an XLSX File.",
+    "author": "Miguel Mejia",
     "params": [
       {
-        "name": "string",
-        "displayName": "String",
+        "name": "file",
+        "displayName": "File URL",
         "type": "string"
       },
       {
-        "name": "start",
-        "displayName": "Start index",
-        "type": "number"
-      },
-      {
-        "name": "end",
-        "displayName": "End index",
-        "type": "number"
+        "name": "range",
+        "displayName": "Range",
+        "type": "string"
       }
     ],
     "result": {
