@@ -4,7 +4,7 @@ window.function = function (url, cells) {
   cellsRange = cells.value ?? "";
   var extract = "";
 
-  fetch(fileUrl)
+  return fetch(fileUrl)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -26,11 +26,11 @@ window.function = function (url, cells) {
       
       extract = JSON.stringify(jsonData, null, 2)
       console.log(extract);
-      
+      return extract;
     })
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
     });
 
-    return "extract";
+    
 }
