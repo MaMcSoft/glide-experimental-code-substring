@@ -1,4 +1,4 @@
-window.function = async function (url, cells) {
+window.function = function (url, cells) {
 
   fileUrl = url.value ?? "";
   cellsRange = cells.value ?? "";
