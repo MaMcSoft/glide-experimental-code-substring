@@ -19,7 +19,7 @@ window.function = async function(url, cells, index) {
       const worksheet = workbook.Sheets[workbook.SheetNames[sheet]];
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: cellsRange[i] });
       //const extract = JSON.stringify(jsonData, null, 2);
-      console.log("Extracted Data:", extract);
+      console.log("Extracted Data:", jsonData);
       results.push(jsonData);
   }
     return JSON.stringify(results, null, 2);
