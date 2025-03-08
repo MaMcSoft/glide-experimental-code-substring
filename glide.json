@@ -17,10 +17,7 @@
 			}
 		],
 		"result": {
-			"type": {
-			  "kind": "array",
-			  "items": "primitive"
-			}
+			"type":  "array"
 		  }
 	}
 ]
