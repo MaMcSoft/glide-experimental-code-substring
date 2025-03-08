@@ -31,6 +31,7 @@ window.function = function (url, cells) {
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
     });
+    
     console.log(extract);
     return extract;
 }
