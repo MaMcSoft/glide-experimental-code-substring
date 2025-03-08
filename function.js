@@ -1,11 +1,14 @@
 window.function = async function(url, cells, index) {
   try {
-    const fileUrl = url.value.split(",") ?? "";
-    const cellsRange = cells.value.split(",") ?? "";
+    const fileUrl = url.value ?? "";
+    const cellsRange = cells.value ?? "";
     const sheetsIndex = index.value ?? "";
     const response = await fetch(fileUrl);
 
     let results = [];
+
+    cellsRange = cellsRange.split(",");
+    sheetsIndex = sheetsIndex.split(",");
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
