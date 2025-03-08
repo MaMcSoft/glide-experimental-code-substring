@@ -2,7 +2,7 @@ window.function = async function(url, cells, index) {
   try {
     const fileUrl = url.value.split(",") ?? "";
     const cellsRange = cells.value.split(",") ?? "";
-    const sheetsIndex = index.value.split(",") ?? "";
+    const sheetsIndex = index.value ?? "";
     const response = await fetch(fileUrl);
 
     let results = [];
