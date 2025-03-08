@@ -12,7 +12,12 @@
 			},
 			{
 				"name": "cells",
-				"displayName": "Range",
+				"displayName": "Range (For multiple sheets separate the ranges by commas Eg. A1:D50,B3:Z100)",
+				"type": "string"
+			},
+			{
+				"name": "index",
+				"displayName": "Sheet Index (Star form 0 and for multiple sheets separate the indexes by commas Eg. 2,5,8)",
 				"type": "string"
 			}
 		],
