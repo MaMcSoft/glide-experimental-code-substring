@@ -1,7 +1,8 @@
 
 window.function = function (url, cells) {
 
-  const fileUrl = url;
+  const fileUrl = url ?? "";
+  const cellsRange = cells ?? "";
 
   fetch(fileUrl)
     .then(response => {
@@ -18,7 +19,7 @@ window.function = function (url, cells) {
       // Select the first worksheet (adjust if needed)
       const worksheet = workbook.Sheets[workbook.SheetNames[0]];
       // Define the range you want to extract (for example, A1:D10)
-      const range = cells;
+      const range = cellsRange;
       // Convert the specified range to JSON.
       // By default, the first row is used as the header row.
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: range });
