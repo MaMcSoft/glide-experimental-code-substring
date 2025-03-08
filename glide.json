@@ -1,23 +1,30 @@
-[
-  {
-    "kind": "column",
-    "name": "XLSX",
-    "description": "Extracts an specific range from an XLSX File.",
-    "author": "Miguel Mejia",
-    "params": [
-      {
-        "name": "url",
-        "displayName": "File URL",
-        "type": "string"
-      },
-      {
-        "name": "cells",
-        "displayName": "Range",
-        "type": "string"
+{
+  "kind": "column",
+  "name": "XLSX",
+  "description": "Gets the contentn of an XLSX",
+  "author": "Miguel Mejia <mamcsoft92@gmail.com>",
+  "params": [
+    {
+      "name": "url",
+      "displayName": "File URL",
+      "type": {
+        "kind": "string"
       }
-    ],
-    "result": {
-      "type": "string"
+    },
+    {
+      "name": "cells",
+      "displayName": "Range",
+      "type": {
+        "kind": "string"
+      }
+    }
+  ],
+  "result": {
+    "name": "array",
+    "displayName": "Array",
+    "type": {
+      "kind": "array",
+      "items": "primitive"
     }
   }
-]
+}
