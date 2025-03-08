@@ -26,7 +26,7 @@ window.function = function (url, cells) {
       
       const extract = JSON.stringify(jsonData, null, 2)
       console.log(extract);
-      return jsonData;
+      return extract;
     })
     .catch(error => {
       console.error('Error fetching or processing the Excel file:', error);
